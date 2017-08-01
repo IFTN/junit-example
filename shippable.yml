@@ -9,6 +9,8 @@ build:
     - mkdir -p shippable/codecoverage
     - ant test
     - ls
+    - mv TEST-CalculatorTest.xml lol
+    - cd /shippable/testresults && ls
 
   post_ci:
     - echo 'post_ci'
