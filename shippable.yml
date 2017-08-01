@@ -5,11 +5,13 @@ jdk:
 
 build:
   ci:
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
     - ant test
 
   post_ci:
     - echo 'post_ci'
-  
+
   on_success:
     - echo 'success :)'
 
