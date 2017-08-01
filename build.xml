@@ -24,15 +24,14 @@
 
   <target name="test" depends="test-compile">
     <junit printsummary="on" haltonfailure="yes" fork="true">
-        <!-- <classpath>
+        <classpath>
           <path refid="classpath.test"/>
           <pathelement location="${test.build.dir}"/>
         </classpath>
         <formatter type="brief" usefile="false" />
         <batchtest>
             <fileset dir="${test.src.dir}" includes="**/*Test.java" />
-        </batchtest> -->
-        <test name="com.test"/>
+        </batchtest>
     </junit>
   </target>
 </project>
