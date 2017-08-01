@@ -7,6 +7,9 @@ build:
   ci:
     - ant test
 
+  post_ci:
+    - echo 'post_ci'
+  
   on_success:
     - echo 'success :)'
 
