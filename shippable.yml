@@ -8,6 +8,7 @@ build:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
     - ant test
+    - ls
 
   post_ci:
     - echo 'post_ci'
